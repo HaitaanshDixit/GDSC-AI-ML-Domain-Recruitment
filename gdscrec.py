@@ -93,7 +93,7 @@ best_model = grid_search.best_estimator_
 y_pred = best_model.predict(X_test)
 print(y_pred, '\n\n')
 """
-# GBC is very slow over this large dataset (on my laptop), so we will try to use Logistic regression now, main requirment for that is dropping non-numeric columns so that it can be used, so I did it above before preprocessing.
+# I first tried to implement GBC but it took a lot of time to execute over this large dataset so I had to switch to Logistic regression afterwards, main requirment for that is dropping non-numeric columns so that it can be used, so I did it above before preprocessing.
 
 
 # Logistic Regression
